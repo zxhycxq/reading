@@ -24,6 +24,7 @@ import Feedback from '../pages/Feedback';
 import About from '../pages/About';
 
 const TabContainer = TabNavigator(
+  //  四个分类  底部导航 及动画、颜色设置
   {
     Main: { screen: MainContainer },
     Category: { screen: CategoryContainer },
@@ -49,7 +50,7 @@ const TabContainer = TabNavigator(
     }
   }
 );
-
+//堆栈导航  顶部导航部分
 const App = StackNavigator(
   {
     Splash: { screen: Splash },
@@ -67,6 +68,7 @@ const App = StackNavigator(
     },
     Web: { screen: WebViewPage }
   },
+  //  顶部设置
   {
     headerMode: 'screen',
     navigationOptions: {
